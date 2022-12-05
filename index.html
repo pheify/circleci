@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <button id="btn">Click me!</button>
+
+    <script>
+const btn = document.getElementById('btn');
+btn.click=false;
+btn.addEventListener('click', function handleClick() {
+  btn.textContent = 'CircleCi is The Best';
+  btn.click=true;
+  alert(btn.click==true?"new text is displayed and button is working":"notclicked")
+}); 
+    </script>
+  </body>
+</html>
